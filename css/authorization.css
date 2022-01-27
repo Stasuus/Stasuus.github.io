@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 900px;
+    padding: 25px 0;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.40);
+}
+
+form img{
+    width: 80%;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+form span{
+    margin: 5px 0;
+}
+
+form input{
+    width: 60%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #55595c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+form input[type="password"]{
+    margin-top: 20px;
+}
+
+form input[type="submit"]{
+    width: 200px;
+    margin-top: 20px;
+    background-color: #518CC3;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover{
+    background-color: #3A72A7;
+}
+
+form input:focus{
+    border-bottom: 2px solid #66AFE9;
+}
+
+form .error{
+    border-bottom: 2px solid #c51111;
+}
+
+form .disable{
+    display: none;
+}
+
+#FormError{
+    max-width: 500px;
+    margin-top: 15px;
+    padding: .15rem .25rem;
+    border-bottom: solid 3px #518CC3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
